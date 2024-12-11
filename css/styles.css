@@ -63,3 +63,14 @@ header nav ul {
 .github-logo:hover {
     transform: scale(1.2);
 }
+
+.hero-header {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-header h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
