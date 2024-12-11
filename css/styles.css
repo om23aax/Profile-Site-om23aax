@@ -1,0 +1,65 @@
+body {
+    font-family: 'Teko', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: url('../images/mainbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    font-size: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 5px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left li {
+    margin-right: 15px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right li {
+    margin-left: 15px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-right a:hover {
+    color: #ffcc00;
+}
+
+.github-logo {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.github-logo:hover {
+    transform: scale(1.2);
+}
