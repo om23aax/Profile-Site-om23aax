@@ -136,3 +136,20 @@ header nav ul {
     color: #ffffff;
     margin-bottom: 15px;
 }
+#portfolio {
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
