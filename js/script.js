@@ -27,3 +27,35 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(typeRoles, typingSpeed);
     }
     typeRoles();
+    
+    const modal = document.getElementById("projectModal");
+    const closeBtn = document.querySelector(".close-btn");
+    const projectCards = document.querySelectorAll(".project-card");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDescription = document.getElementById("modalDescription");
+    const modalImage = document.getElementById("modalImage");
+  
+    projectCards.forEach(card => {
+        card.addEventListener("click", function () {
+            const title = card.querySelector("h3").textContent;
+            const description = card.getAttribute("data-description");
+            const imageSrc = card.getAttribute("data-image");
+  
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalImage.src = imageSrc;
+  
+            modal.style.display = "block";
+        });
+    });
+  
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+  
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
